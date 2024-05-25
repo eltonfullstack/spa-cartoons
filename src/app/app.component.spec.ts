@@ -22,6 +22,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('H1')?.textContent).toContain('O Senhor é o meu pastor e nada me faltará!');
+    expect(compiled.querySelector('H1')?.textContent).toContain('Jesus é o meu general!!!');
   });
 });
