@@ -22,6 +22,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('spa-cartoons app is running!');
+    expect(compiled.querySelector('H1')?.textContent).toContain('Deus é fiel!');
   });
 });
