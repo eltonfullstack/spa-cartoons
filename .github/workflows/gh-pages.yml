@@ -10,12 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-      - name: npm install, build, and test
-        run: npm run build
+          node-version: 16
+      - run: npm install
+      - run: npm run build
         
